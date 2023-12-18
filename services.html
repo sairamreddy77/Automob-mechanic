@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMob-Mechanic - Services</title>
+    <style>
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        footer{
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 2px solid #ddd;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AutoMob-Mechanic</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="mailto:contact@automob.co.in">contact@automob.co.in</a>
+    </nav>
+
+    <hr>
+
+    <section>
+        <h2>Our Services</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Preventive-Maintenance-Service</td>
+                    <td>Regular oil change and filter replacement</td>
+                    <td>$39.99</td>
+                    <td><button >More Details</button></td>
+                </tr>
+
+                <tr>
+                    <td>Body-Repair-service</td>
+                    <td>car dent repair, car repair and full body service</td>
+                    <td>47.99$</td>
+                    <td><button >More Details</button></td>
+                </tr>
+
+                <tr>
+                    <td>Car-Care-Service</td>
+                    <td>car washing and vacuuming,protective coating and internal cleaning</td>
+                    <td>27.99$</td>
+                    <td><button >More Details</button></td>
+                </tr>
+                
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2023 AutoMob-Mechanic</p>
+    </footer>
+
+    <script>
+        function redirectToService(servicePage) {
+            window.location.href = servicePage;
+        }
+    </script>
+</body>
+</html>

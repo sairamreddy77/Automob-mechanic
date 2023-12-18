@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoMob-Mechanic - Booking</title>
+    <style>
+        /* Styles for the page content */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        nav {
+            background-color: #3498db;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 2px solid #ddd;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, select, button {
+            width: auto;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #2ecc71;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AutoMob-Mechanic</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="booking.html">Booking</a>
+        <a href="mailto:contact@automob.co.in">contact@automob.co.in</a>
+    </nav>
+
+    <hr>
+
+    <section>
+        <h2>Schedule an Appointment</h2>
+        <form id="bookingForm" action="appointment.html" method="post" >
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]+" placeholder="First Name Last Name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="xyz@abc.com">
+
+
+            <label for="phone">Phone Number:</label>
+            <select id="code" name="code" required>
+                <option value="" disabled selected>Select Code</option>
+                <option value="+213">+213</option>
+                <option value="+91">+91</option>
+                <option value="+244">+244</option>
+                <option value="+61">+61</option>
+            </select>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10-digit phone number">
+
+            <label for="service">Select Service:</label>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Select Service</option>
+                <option value="Preventive Maintenance Service">Preventive Maintenance Service</option>
+                <option value="Body Repair Service">Body Repair Service</option>
+                <option value="Car Care Service">Car Care Service</option>
+            </select>
+
+            <label for="carMake">Car Make:</label>
+            <input list="carMakes" id="carMake" name="carMake" required placeholder="Select or enter car make">
+            <datalist id="carMakes">
+                <option value="Mahindra">
+                <option value="Honda">
+                <option value="Hyundai">
+                <option value="Ford">
+                <option value="Toyota">
+                <option value="Nissan">
+                
+            </datalist>
+
+            <label for="carModel">Car Model:</label>
+            <input type="text" id="carModel" name="carModel" required placeholder="Enter car model">
+
+            <label>Choose Fuel Type:</label>
+            <label><input type="radio" name="fuelType" value="Petrol" required> Petrol</label>
+            <label><input type="radio" name="fuelType" value="Diesel" required> Diesel</label>
+
+            <label for="kilometers">Kilometers Ran:</label>
+            <input type="number" id="kilometers" name="kilometers" required>
+
+            <a href="appointment.html"><button>book appointment</button></a>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2023 AutoMob-Mechanic</p>
+    </footer>
+
+</body>
+</html>
